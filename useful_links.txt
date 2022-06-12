@@ -1,0 +1,2 @@
+Linking models with Foreign Keys - Django Web Development with Python p.9
+https://www.youtube.com/watch?v=Rju5qdU0e58

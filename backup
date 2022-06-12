@@ -1,0 +1,14 @@
+<form action="{% url 'like_article' article.id %}" method="post">
+                            {% csrf_token %}
+                            <button type="submit" name="article_id"
+                                    class="btn btn-success btn-sm"
+                                    value="{{ article.id }}"
+                                    >LIKE</button> - {{ total_likes   }}
+                        </form>
+
+
+                        <i class="fa-regular fa-heart fa-lg"
+                               id="btnLike"
+                               name="article_id"
+                               value="{{ article.id }}"
+                               onclick="toggleLike(this)"></i> {{ total_likes   }}
